@@ -85,7 +85,7 @@ const getMe = asyncHandler(async (req, res) => {
     email: req.user.email,
     name: req.user.name,
   }
-  
+
   res.status(200).json(user);
 })
 
