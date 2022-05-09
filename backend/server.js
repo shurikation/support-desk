@@ -12,4 +12,7 @@ app.get('/', (req, res) => {
   res.status(200).json({message: 'Status 201 now :)'})
 })
 
+//Routes
+app.use('/api/users', require('./routes/userRoutes'))
+
 app.listen(PORT, () => console.log(`Server started on ${PORT}`))
